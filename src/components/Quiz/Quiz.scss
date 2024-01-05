@@ -2,8 +2,8 @@
 
 .quiz-container {
   width: 500px;
-  background-color: $bg;
-  border-radius: 4px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
   margin-top: 100px;
   padding: 30px 60px;
   box-sizing: border-box;
@@ -25,6 +25,7 @@
     font-size: 20px;
     font-weight: 500;
     margin: 0;
+    margin-top: 20px;
   }
 
   ul {
@@ -54,22 +55,23 @@
   .footer {
     display: flex;
     justify-content: flex-end;
-  }
 
-  button {
-    background: linear-gradient(0deg, $primary 0.03%, $accent);
-    border-radius: 9px;
-    font-size: 18px;
-    color: $bg;
-    padding: 10px 42px;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-
-    &:disabled {
-      background-color: $bg-accent;
-      color: $disabled;
-      cursor: not-allowed;
+    button {
+      background: #150080;
+      border-radius: 9px;
+      font-size: 18px;
+      color: $bg;
+      padding: 10px 42px;
+      outline: none;
+      border: none;
+      margin-top: 15px;
+      cursor: pointer;
+  
+      &:disabled {
+        background-color: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
+      }
     }
   }
 

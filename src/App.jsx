@@ -9,12 +9,19 @@ function App() {
 
   const getQuestions = async () => {
     try {
-      const response = await fetch(
-        "https://644982a3e7eb3378ca4ba471.mockapi.io/questions"
+      const urls = [
+        "https://65983487668d248edf244a07.mockapi.io/questions",
+        "https://65983487668d248edf244a07.mockapi.io/questions2",
+      ];
+
+      const responses = await Promise.all(urls.map((url) => fetch(url)));
+      const questionsArrays = await Promise.all(
+        responses.map((res) => res.json())
       );
-      const questionsResponse = await response.json();
-      console.log(questionsResponse);
-      setQuestions(questionsResponse);
+
+      const combinedQuestions = questionsArrays.flat();
+      console.log(combinedQuestions);
+      setQuestions(combinedQuestions);
     } catch (error) {
       console.log(error);
     }

@@ -3,6 +3,7 @@ import { resultInitialState } from "../../constants";
 import "./Quiz.scss";
 import AnswerTimer from "../AnswerTimer/AnswerTimer";
 import Result from "../Result/Result";
+import Feedback from "../Feedback/Feedback";
 
 const Quiz = ({ questions }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -95,10 +96,11 @@ const Quiz = ({ questions }) => {
 
   return (
     <div className="quiz-container">
+      <Feedback />
       {!showResult ? (
         <>
           {showAnswerTimer && (
-            <AnswerTimer duration={5} onTimeUp={handleTimeUp} />
+            <AnswerTimer duration={25} onTimeUp={handleTimeUp} />
           )}
           <span className="active-question-no">{currentQuestion + 1}</span>
           <span className="total-questions">/{questions.length}</span>
