@@ -1,5 +1,5 @@
-# CS 2200 Quiz App
-Welcome to the CS 2200 Quiz App, a practice quiz application for the Systems and Networks class at Georgia Tech. This application is designed to help you prepare for your CS 2200 exams by providing a variety of questions from the class syllabus.
+# Quiz App
+Welcome to the Quiz App for CS 2200, a practice quiz application for the Systems and Networks class at Georgia Tech. This application is designed to help you prepare for your CS 2200 final exam by providing a variety of questions from subjects within the class syllabus.
 
 ## Features
 - Multiple-Choice Questions: The app includes a wide range of multiple-choice questions that cover various topics from the CS 2200 syllabus.
