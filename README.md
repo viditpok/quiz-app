@@ -5,7 +5,7 @@ Welcome to the Quiz App for CS 2200, a practice quiz application for the Systems
 - Multiple-Choice Questions: The app includes a wide range of multiple-choice questions that cover various topics from the CS 2200 syllabus.
 - Questions with Timers: Some questions come with timers to simulate exam conditions and help you improve your time management skills.
 - Score Tracking: The app tracks your score as you answer questions, providing instant feedback on your performance.
-- External API Integration: Questions can be fetched from an external API to ensure a diverse set of questions for practice.
+- External API Integration: Questions are fetched from the MockAPI.io external API to ensure a diverse set of questions for practice.
 - Result Saving: Your quiz results are saved, allowing you to review your performance and progress over time.
 - Leaderboard: Compete with your peers and see where you stand by checking the leaderboard for the highest scores.
 
